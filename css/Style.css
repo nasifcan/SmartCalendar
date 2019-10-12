@@ -1,0 +1,114 @@
+body{
+  font-family: Calibri, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #333;
+}
+.cld-main{
+  width: 100%;
+}
+.cld-main a{
+  color: #7B00FF;
+  
+}
+  .cld-datetime{
+    position: relative;
+    width: 66%;
+    min-width: 100px;
+    max-width: 300px;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom:30px;
+     /*ay ve gün arasındaki boşluk*/
+  }
+  .cld-datetime .today{
+    position: relative;
+    float: left;
+    width: calc(100% - 40px);
+    margin: auto;
+    text-align: center;
+  }
+  .cld-nav{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+  }
+  .cld-nav:hover{
+    cursor: pointer;
+  }
+  .cld-nav:hover svg{
+      fill:#666;
+      
+  }
+  .cld-rwd{
+    float: left;
+  }
+  .cld-fwd{
+    float: right;
+  }
+.cld-labels, .cld-days{
+  padding-left: 0;
+}
+  .cld-label, .cld-day{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 14.28%;
+    text-align: center;
+    background-color:lightgreen; 
+    /*takvim arka plan rengi;*/
+    
+  }
+  .cld-day{
+    display: block;
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 5px;
+    height: 66px;
+    border: 1px solid #000; 
+    /*Takvim tablo çizgi kalınlığı ve rengi*/
+    overflow-y: auto;
+  }
+  .cld-day.clickable:hover{
+    cursor: pointer;
+  }
+  .cld-day.today{
+    border: 3px solid #7B00FF;
+     /*Bu günün etrafına çerçeve ekliyor*/
+  }
+  .cld-day.disableDay{
+    opacity: 0.5;
+  }
+  .cld-day.nextMonth, .cld-day.prevMonth{
+    opacity: 0.33;
+  }
+    .cld-number{
+      margin: 0;
+      text-align: left;
+    }
+      .cld-title{
+        font-size: 15px;
+        margin: 0;
+        font-weight: normal;
+        background: mediumblue;
+        color: white;
+        /*datadan gelen yazının arka plan rengi*/
+        
+      }
+      .cld-title a{
+        font-size: 15px;
+        margin: 0;
+        font-weight: normal;
+        color: white;
+         /*datadan gelen yazının rengi*/
+      }
+      .cld-day:hover{
+        background: #eee;
+      }
+      .cld-number.eventday{
+        font-weight: bold;
+      }
+      .cld-number.eventday:hover{
+        background: #eee;
+      }
+     
